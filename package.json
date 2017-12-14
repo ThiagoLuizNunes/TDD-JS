@@ -1,0 +1,24 @@
+{
+  "name": "tdd-js",
+  "version": "1.0.0",
+  "description": "library js with tdd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagoLuizNunes/TDD-JS.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "Thiago Luiz <thiagoluiz.dev@gmail.com> (https://www.linkedin.com/in/thiago-luiz-507483112)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThiagoLuizNunes/TDD-JS/issues"
+  },
+  "homepage": "https://github.com/ThiagoLuizNunes/TDD-JS#readme"
+}
