@@ -1,5 +1,9 @@
 const cities = ['Jampa', 'Recife', 'Natal'];
 
-const newCities = cities.map(name => `I love ${name}`);
+const loveCities = cities.map(name => `I love ${name}`);
 
-console.log(newCities);
+console.log(loveCities);
+
+const loveJampa = cities.filter(name => name === 'Jampa').map(name => `I love ${name}`);
+
+console.log(loveJampa);
