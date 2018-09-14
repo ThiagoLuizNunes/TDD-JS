@@ -1,13 +1,19 @@
 const fizz = (num) => {
-  return num % 3 === 0 ? 'Fizz' : 'undefined';
+  if (num % 3 === 0) {
+    return 'Fizz';
+  }
 };
 
 const buzz = (num) => {
-  return num % 5 === 0 ? 'Buzz' : 'undefined';
-}; 
+  if (num % 5 === 0) {
+    return 'Buzz';
+  }
+};
 
 const fizzBuzz = (num) => {
-  return num % 3 === 0 && num % 5 === 0 ? 'Fizz Buzz' : 'undefined';
-}; 
+  if (num % 3 === 0 && num % 5 === 0) {
+    return 'Fizz Buzz';
+  }
+};
 
 export { fizz, buzz, fizzBuzz };
