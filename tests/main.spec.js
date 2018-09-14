@@ -1,11 +1,11 @@
 import { expect } from 'chai';
-import object from '../src/main';
+import { myObject } from '../src/main';
 
 let obj;
 
 describe('Main', () => {
   before(() => {
-    obj = object;
+    obj = myObject;
   });
 
   describe('Component Object', () => {

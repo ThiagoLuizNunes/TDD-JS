@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "mocha --require babel-core/register tests/**/*.spec.js --reporter=landing"
+    "test": "mocha --require babel-core/register tests/**/*.spec.js --reporter=landing",
+    "test:tdd": "mocha --require babel-core/register tests/**/*.spec.js --watch"
   },
   "repository": {
     "type": "git",

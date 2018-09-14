@@ -1,4 +1,4 @@
-const object = {
+const myObject = {
   name: 'thiago',
   age: 25,
   height: 1.75,
@@ -6,4 +6,13 @@ const object = {
   father: 'Pai'
 };
 
-export default object;
+class Calc {
+  constructor() {
+    this.sum = (num1, num2) => num1 + num2;
+    this.sub = (num1, num2) => num1 - num2;
+    this.mult = (num1, num2) => num1 * num2;
+    this.div = (num1, num2) => num1 / num2;
+  }
+}
+
+export { myObject, Calc };
