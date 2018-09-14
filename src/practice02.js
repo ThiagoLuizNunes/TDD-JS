@@ -6,7 +6,7 @@ const article = {
   title: 'Learning Template Strings',
   intro: 'I am studing javascript to be a better developer',
   tags: ['Home', 'Menu', 'Map'],
-  author: 'Thiago Luiz Nunes',
+  author: 'Thiago Luiz Nunes'
 };
 
 const makeup = `

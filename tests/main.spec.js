@@ -10,23 +10,23 @@ describe('Main', () => {
 
   describe('Component Object', () => {
     context('Check Object properties', () => {
-      it('should compare object', () => {
+      it('should check if is object', () => {
         expect(obj).to.be.an('object');
       });
-      it('should compare name attribute', () => {
-        expect(obj.name).to.be.a('string');
+      it('should check if there is name property', () => {
+        expect(obj).to.be.a.property('name');
       });
-      it('should compare age attribute', () => {
-        expect(obj.age).to.be.a('number');
+      it('should check if there is age property', () => {
+        expect(obj).to.be.a.property('age');
       });
-      it('should compare height attribute', () => {
-        expect(obj.height).to.be.a('number');
+      it('should check if there is height property', () => {
+        expect(obj).to.be.a.property('height');
       });
-      it('should compare mother attribute', () => {
-        expect(obj.mother).to.be.a('string');
+      it('should check if there is mother property', () => {
+        expect(obj).to.be.property('mother');
       });
-      it('should compare father attribute', () => {
-        expect(obj.father).to.be.a('string');
+      it('should check if there is father property', () => {
+        expect(obj).to.be.a.property('father');
       });
     });
 
