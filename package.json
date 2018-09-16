@@ -7,7 +7,12 @@
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
     "test": "mocha --require babel-core/register tests/**/*.spec.js --reporter=landing",
-    "test:tdd": "mocha --require babel-core/register tests/**/*.spec.js --watch"
+    "test:tdd": "mocha --require babel-core/register tests/**/*.spec.js --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "repository": {
     "type": "git",
@@ -26,6 +31,7 @@
   "homepage": "https://github.com/ThiagoLuizNunes/TDD-JS#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
     "coffeescript": "^2.3.1",
@@ -35,6 +41,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "husky": "^0.14.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1"
   }
 }
