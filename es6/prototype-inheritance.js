@@ -3,7 +3,7 @@ function Animal(kind, sound) {
   this.sound = sound;
 }
 
-Animal.prototype.hello = function() {
+Animal.prototype.hello = () => {
   console.log(`${this.sound} I'm a ${this.kind}`);
 };
 
