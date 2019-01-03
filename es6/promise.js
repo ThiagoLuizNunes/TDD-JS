@@ -15,3 +15,9 @@ Promise
   .then((responses) => {
     console.log(responses);
   });
+
+Promise
+  .race([currency, countries])
+  .then((responses) => {
+    console.log(responses);
+  });
